@@ -1,0 +1,126 @@
+body{
+    background-image: url('../images/dark_wood_@2X.png');
+}
+
+p {
+    margin-left:12px;
+}
+
+.header {
+    color:#FFFFFF;
+    font-weight:bolder;
+    background-color: dimgrey;
+    height:60px;
+    margin-bottom:0;
+    opacity: .8;
+    line-height: 60px;
+}
+
+#wrapper {
+    width:960px;
+    margin-left:15%;
+    background-color:maroon;
+    border:solid 5px black;
+    border-radius: 20px;
+}
+
+.header p {
+    text-align: center;
+    font-size: 40px;
+    margin-right:12px;
+}
+
+* {
+  font-family:"helvetica", Arial, serif;
+  font-weight: bold;
+}
+
+a:link {
+    text-decoration: none;
+    color:deepskyblue;
+}
+a:visited {
+    text-decoration: none;
+    color:deepskyblue;
+}
+
+.header:first-letter {
+    color:maroon;
+}
+
+img[src$='.jpg'] {
+    border:solid 2px black;
+    float:left;
+    width:300px;
+    height:300px;
+    margin-left:12px;
+    clear:right;
+    margin-bottom:5px;
+
+}
+.content {
+    background-color:darkgrey;
+    padding-left:5px;
+}
+
+.content section {
+    font-size:20px;
+}
+
+a[href^="http://"] {
+    color:cornflowerblue;
+    font-weight: bolder;
+}
+
+img[src*="_01"] {
+    border:solid 2px white;
+}
+
+a[href] {
+    text-decoration: underline;
+}
+
+a[href="http://www.myspace.com"] {
+    color:darkgrey;
+}
+
+[class~="section"] {
+    background-color:yellow;
+}
+
+#tn {
+    border:solid 2px black;
+    margin-left:310px;
+}
+
+#tn-01 {
+    border:solid 2px white;
+}
+
+#tn-02 {
+    border:solid 2px black;
+}
+
+img[id|="tn"] {
+    height:100px;
+    width:100px;
+    margin-left:10px;
+}
+ul {
+    font-weight: bolder;
+    font-size: 16px;
+    text-align: center;
+    list-style: none;
+    color:white;
+}
+ul>li {
+    color:black;
+}
+
+li+li {
+    color:grey;
+}
+
+li+li+li {
+    color:yellow;
+}
