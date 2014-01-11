@@ -1,0 +1,142 @@
+/*
+    Daniel O'Carroll
+    1/10/14
+    1863459
+*/
+
+body {
+    background:url("../images/mochaGrunge.png"), repeat-x, repeat-y;
+}
+
+.wrapper {
+    width:960px;
+    margin:2% 0 0 15%;
+}
+
+.header {
+    background-color:#00685A;
+    opacity: .7;
+    height: 80px;
+    border-radius:20px 20px 0 0;
+    color:#FFAD73;
+}
+
+.header h1 {
+    font:bold 3.125em 'Special Elite', cursive;
+    text-align: center;
+    line-height:180%;
+    width:100%;
+}
+
+.content {
+    background-color:#E1E6C5;
+    width:100%;
+    opacity: .7;
+    border-radius:0 0 20px 20px;
+}
+
+.content p {
+    opacity: 1;
+    margin:0;
+    padding:1% 5% 1% 5%;
+    color:#59565E;
+}
+
+.content h2 {
+    font:bold 1.5em 'Special Elite', cursive;
+    color:#5DD0C0;
+    margin:0;
+    padding:2% 0 0 5%;
+}
+
+img {
+   width:20%;
+   float:right;
+   border:solid 2px #BF6B30;
+   margin:0 5% 2% 2%;
+   border-radius: 10px;
+}
+.imgleft{
+    float:left;
+    margin:1%;
+}
+
+/* Media Query */
+
+@media screen and (min-width:768px) and (max-width:959px){
+    .wrapper {
+        padding:1%;
+        width:100%;
+        margin:1%;
+    }
+
+    .content {
+        padding:1%;
+        width:100%;
+    }
+
+    .header {
+        padding:1%;
+        width:100%;
+    }
+
+    .header h1 {
+        line-height: 10%;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:767px){
+    .wrapper {
+        padding:1%;
+        width:100%;
+        margin:1%;
+    }
+
+    .content {
+        padding:1%;
+        width:100%;
+    }
+
+    .header {
+        padding:1%;
+        width:100%;
+    }
+
+    .header h1 {
+        line-height: 10%;
+    }
+
+}
+
+@media only screen and (max-width:479px) {
+    .wrapper {
+        padding:1%;
+        max-width:100%;
+        margin-right:5%;
+        margin-left:0;
+    }
+
+    .content {
+        width:100%;
+    }
+
+    .header {
+        padding: 1%;
+    }
+
+    img {
+        display:none;
+    }
+
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .content h2 {
+        font-size:1.5em;
+    }
+
+    .content p {
+        font-size:1em;
+    }
+}
