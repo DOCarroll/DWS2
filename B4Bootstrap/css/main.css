@@ -3,7 +3,7 @@ body {
 }
 
 .header {
-    color: #fffafa;
+    color: #428BCA;
     font-family: 'Metamorphous', cursive;
     font-size: 4em;
 }
@@ -25,6 +25,7 @@ h2 {
 .container {
     max-width: 100%;
 }
+
 
 
 
