@@ -26,6 +26,16 @@ h2 {
     max-width: 100%;
 }
 
+img {
+    width:100%;
+    margin-bottom:2%;
+}
+
+.center {
+    text-align: center;
+}
+
+
 
 
 
@@ -34,13 +44,16 @@ h2 {
 ================================================== */
 
 /* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) {}
+@media only screen and (max-width: 959px) {
+
+}
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
     .wrapper {
         width: 100%;
     }
+
 }
 
 /* All Mobile Sizes (devices and browser) */
