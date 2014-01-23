@@ -67,13 +67,21 @@ a:hover {
 .imggal {
     height: 100px;
     width:20%;
-    padding:2.3%;
+    border: solid 5px #a6e1ec;
+    margin:1%;
+    position:relative;
+    left:2%;
+    z-index: 1;
 
 }
 
 .spaceship {
     position: fixed;
-    
+    right: 2%;
+    top: 1px;
+    width:25%;
+
+
 }
 
 
@@ -94,6 +102,9 @@ a:hover {
     .wrapper {
         width: 100%;
     }
+    .imggal{
+        width:40%;
+    }
 
 }
 
@@ -102,6 +113,9 @@ a:hover {
     .wrapper {
         width: 100%;
     }
+    .imggal {
+        width:40%;
+    }
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -109,6 +123,10 @@ a:hover {
     .wrapper {
         width: 100%;
     }
+    .imggal{
+        width:40%;
+    }
+
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -118,9 +136,14 @@ a:hover {
     }
     .header {
         width:95%;
+        font-size: 2.3em;
     }
     .nav {
         font-size: 1.3em;
+    }
+
+    .imggal{
+        width:95%;
     }
 
 }
