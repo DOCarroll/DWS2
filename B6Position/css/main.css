@@ -1,0 +1,126 @@
+/* Danny O'Carroll
+   1863459 */
+* {
+    margin:0;
+    padding:0;
+}
+
+h1 {
+    color: #080808;
+    padding:10px;
+}
+
+.wrapper {
+    width:960px;
+    margin: 0 auto;
+    border: solid 2px #080808;
+    border-radius: 0px 0px 20px 20px;
+}
+
+body {
+    background-image: url('../images/stardust.png');
+}
+
+.header {
+    width:98%;
+    background-color: #080808;
+    color: #a6e1ec;
+    height:60px;
+    line-height: 60px;
+    font-size: 3em;
+}
+
+.nav {
+    width:100%;
+    background-color: #0099cc;
+    background-color:#a6e1ec;
+    font-size: 1.5em;
+    height: 30px;
+    line-height: 30px;
+}
+
+.nav ul li {
+    list-style: none;
+    display:inline;
+    margin:10px;
+
+}
+
+.content {
+    background-color: #0099cc;
+    border-radius: 0 0 20px 20px;
+}
+
+.content p {
+    color: #a6e1ec;
+    padding:10px;
+}
+
+a {
+    text-decoration: none;
+    color:#080808;
+}
+a:hover {
+    color:#0099cc;
+}
+
+.imggal {
+    height: 100px;
+    width:20%;
+    padding:2.3%;
+
+}
+
+.spaceship {
+    position: fixed;
+    
+}
+
+
+
+
+
+/* #Media Queries
+================================================== */
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .wrapper {
+        width: 100%;
+    }
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        width:95%;
+    }
+    .nav {
+        font-size: 1.3em;
+    }
+
+}

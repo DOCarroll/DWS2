@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>B7 Assignment: Forms</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- Range Script for Firefox -->
+    <script src="js/html5slider.js"></script>
+    <script>
+        function showValue(newValue)
+        {
+            document.getElementById("range").innerHTML=newValue;
+        }
+    </script>
+    <!-- Webshim's Lib Polyfill -->
+    <script src="js/jquery-1.7.1.js"></script>
+    <script src="js/js-webshim/minified/extras/modernizr-custom.js"></script>
+    <script src="js/js-webshim/minified/polyfiller.js"></script>
+    <script>
+        //load all defined
+        $.webshims.polyfill();
+    </script>
+
+</head>
+<body>
+            <form>
+                <label for="First Name">First Name:</label>
+                    <input type="text" id="First Name">
+                <label for="Last Name">Last Name:</label>
+                    <input type="text" id="Last Name">
+                <label for="Email">Email: </label>
+                    <input type="email" id="Email">
+
+            </form>
+            <form>
+                <label for="Birthday">Birthday:</label>
+                <input type="date" name="bday" id="Birthday">
+            </form>
+            <form>
+                <label for="Red">Red </label><input type="checkbox" id="Red">
+                <label for="Blue">Blue </label><input type="checkbox" id="Blue">
+                <label for="Green">Green </label><input type="checkbox" id="Green">
+            </form>
+            <form>
+                <label for="Favorite Wheels">Favorite Wheels: </label>
+                    <select id="Favorite Wheels">
+                        <option value="Zombie Hawgs">Zombie Hawgs</option>
+                        <option value="FlyAways">FlyAways</option>
+                        <option value="Hawgs">Hawgs</option>
+                        <option value="Orangatangs">Orangatangs</option>
+                    </select>
+            </form>
+            <form>
+                Favorite Trucks:
+                <label for="Originals">Originals</label>
+                    <input type="radio" name="Trucks" value="Originals" id="Originals">
+                <label for="Bear Grizzlys">Bear Grizzlys</label>
+                    <input type="radio" name="Trucks" value="Bear Grizzlys" id="Bear Grizzlys">
+                <label for="Gulf Wings">Gulf Wings</label>
+                    <input type="radio" name="Trucks" value="Gulf Wings" id="Gulf Wings">
+            </form>
+            <form>
+                <label for="Length">Board Length: </label>
+                <input id="Length" name="howYouRateIt" type="range" min="1.5"
+                       max="6" value="5" step=".5" onchange="showValue(this.value)"><span
+                    id="range">5</span> feet
+
+
+            </form>
+            <form>
+                <label for="Comments">Comments: </label>
+                <textarea maxlength="30" id="Comments">Please leave any further comments here</textarea>
+            </form>
+
+</body>
+</html>
