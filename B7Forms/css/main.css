@@ -3,11 +3,121 @@
    1863459
    01/22/14 */
 
-.wrapper {
-    width:960px;
+body {
+    background-image: url('../images/slash_it.png');
 }
 
+.wrapper {
+    width:960px;
+    background-color:#0063a6;
+    border-radius: 0 0 20px 20px;
+    margin: 0 auto;
+    padding-bottom:2px;
+    height:450px;
+}
 
+label {
+    text-align: left;
+    margin-left:10px;
+}
+
+.formborder {
+    border: solid 10px #000000;
+    border-radius: 0 0 20px 20px;
+    width: 60%;
+    margin: 2% auto;
+    padding:5% 3% 3% 3%;
+    margin-bottom: 3%;
+    height: 70%;
+}
+
+.header {
+    background-color: #000000;
+    color:#0063a6;
+    height:10%;
+    line-height:60px;
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    position:fixed;
+    top: 0;
+    z-index:1;
+}
+h1 {
+    font-size:1em;
+    display: inline;
+}
+
+.btn, .btn2 {
+    background-color: #bce8f1;
+    border-radius: 20px 20px 20px 20px;
+    border: solid 4px #000000;
+    width:20%;
+    height:30px;
+    margin-bottom:5%;
+}
+.btn2 {
+    width:10%;
+}
+
+.box, .box2 {
+    width:50%;
+    display:block;
+    float: left;
+    margin-top:3%;
+}
+
+.box2 {
+    display: block;
+}
+
+.floatright{
+   float:right;
+}
+
+.box .btn, .box .btn2 {
+    width: 50%;
+    text-align: center;
+    margin-left:50%;
+}
+
+.box .input-buttons date-input-buttons input-button-size-2 {
+    float:right;
+}
+input[type='radio'] {
+    margin-left:0;
+    background-color: #bce8f1;
+}
+
+input[type='checkbox']{
+    margin-left: 0;
+    margin-right:0;
+    background-color: #bce8f1;
+}
+
+input {
+    background-color: #bce8f1;
+    border:solid 2px #000000;
+    border-radius: 5px;
+}
+
+textarea {
+    background-color: #bce8f1;
+    border:solid 2px #000000;
+    border-radius: 5px;
+
+}
+select {
+    background-color: #bce8f1;
+    border: solid 2px #000000;
+    border-radius: 5px;
+}
+option {
+    background-color: #bce8f1;
+    border: solid 1px #000000;
+    border-radius: 5px;
+}
 
 
 
@@ -29,24 +139,51 @@
 
 }
 
-/* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {
-    .wrapper {
-        width: 100%;
-    }
-}
-
-/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-    .wrapper {
-        width: 100%;
-    }
-}
-
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
     .wrapper {
         width: 100%;
+        height:570px;
+    }
+
+    .header {
+        font-size: 1.8em;
+        height:10%;
+        line-height: 80px;
+    }
+
+    h1 {
+        font-size: .8em;
+    }
+    .box {
+        width:100%;
+        margin-top:5%;
+    }
+
+    .formborder{
+        margin-top:10%;
+        height:90%;
+    }
+    .box2 {
+        width:100%;
+        margin-top:5%;
+    }
+    .box .btn {
+        width:70%;
+        text-align: center;
+        margin:10px auto;
+        float:right;
+        margin-right:15%;
+    }
+    .box .btn2 {
+        width:50%;
+        text-align: center;
+        margin:10px auto;
+        float:right;
+        margin-right:25%;
+    }
+    label{
+        margin:0;
     }
 
 }
