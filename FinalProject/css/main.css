@@ -1,0 +1,131 @@
+* {
+    padding:0;
+    margin:0;
+}
+body {
+    background-color: #080808;
+
+}
+
+.header {
+    color: #88AACD;
+    font-size: 4em;
+    line-height: 60px;
+    width:100%;
+    padding: 0;
+    font-family: 'Jolly Lodger', cursive;
+    margin-top:1%;
+}
+h1 {
+    font-size:1em;
+    margin-left:2%;
+}
+
+h2 {
+    color:#B09B93;
+    margin:0;
+    padding-left:2%;
+}
+
+p {
+    color: #88AACD;
+    padding:0 2% 0 2%;
+    margin-bottom:1%;
+}
+
+.wrapper {
+    width:960px;
+    margin: 0 auto;
+    padding-top:0;
+}
+
+.container {
+    max-width: 100%;
+}
+
+img {
+    width:100%;
+    margin-bottom:2%;
+}
+
+.center {
+    text-align: center;
+}
+
+.content {
+    border: solid 3px #B09B93;
+    padding:0;
+    margin:0;
+    border-radius: 20px;
+    background-color: #080808;
+}
+
+nav {
+    color: #080808;
+    background-color: #B09B93;
+    border-radius: 10px 10px 0 0;
+    font-weight: bolder;
+    font-size: 1.5em;
+    height:40px;
+    line-height: 40px;
+    margin-bottom:1%;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    padding:0;
+    margin:0;
+    margin-left:2%;
+}
+
+.baxterlogo {
+    width:20%;
+    z-index: -1;
+    position:absolute;
+    left:.01%;
+    top:1%;
+    opacity: .5;
+}
+
+
+
+
+
+/* #Media Queries
+================================================== */
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .wrapper {
+        width: 100%;
+    }
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+    .wrapper {
+        width: 100%;
+    }
+
+}

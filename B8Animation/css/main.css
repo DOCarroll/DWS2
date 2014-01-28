@@ -1,0 +1,212 @@
+* {
+    padding:0;
+    margin:0;
+}
+body {
+    background-color: #ffffff;
+
+
+}
+
+.header {
+    color:#AB050D;
+    font-size: 4em;
+    line-height: 60px;
+    width:100%;
+    padding: 0;
+    font-family: 'MedievalSharp', cursive;
+    margin-top:1%;
+    transition: color 1s;
+    transition-timing-function: linear;
+    transition-delay: 2s;
+}
+.header:hover {
+    color:orange;
+}
+h1 {
+    font-size:1em;
+    margin-left:2%;
+    transition-property:width;
+    transition-duration:4s;
+}
+h1:hover {
+    width:600px;
+}
+
+h2 {
+    color:#AB050D;
+    margin:0;
+    font-family: 'MedievalSharp', cursive;
+    padding-left:2%;
+}
+
+p {
+    color: #88AACD;
+    padding:0 2% 0 2%;
+    margin-bottom:1%;
+}
+
+.wrapper {
+    width:960px;
+    margin: 0 auto;
+    padding-top:0;
+}
+
+.container {
+    max-width: 100%;
+}
+
+img {
+    width:100%;
+    margin-bottom:2%;
+}
+
+.center {
+    text-align: center;
+}
+
+.content {
+    border: solid 3px #05ABA3;
+    padding:0;
+    margin:0;
+    border-radius: 20px;
+    background-color: #245269;
+    height:650px;
+}
+
+nav {
+    color: #245269;
+    background-color: #05ABA3;
+    border-radius: 10px 10px 0 0;
+    font-weight: bolder;
+    font-size: 1.5em;
+    height:40px;
+    line-height: 40px;
+    margin-bottom:1%;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    padding:0;
+    margin:0;
+    margin-left:2%;
+}
+
+.FireEmblembg{
+    width:50%;
+    height: 70%;
+    z-index: -1;
+    position:fixed;
+    right:.01%;
+    top:1%;
+    opacity: .5;
+}
+
+li {
+    transition: color linear 1s;
+}
+li:hover {
+    color: orange;
+    transition-duration: 2s;
+}
+
+figure {
+    width:20%;
+    padding-top:1%;
+    padding-left:4%;
+    float: left;
+}
+
+figure img {
+    border: solid 3px orange;
+    border-radius: 10px;
+    height: 200px;
+
+}
+
+.trans1 {
+    transform:rotate(9deg);
+}
+
+.trans1:hover {
+    transform:rotate(0deg);
+}
+
+.trans2:hover {
+    transform:translateX(10px);
+}
+
+.trans3:hover {
+    transform:scale(1.5,1.5)
+}
+
+.trans4:hover {
+    transform:skew(10deg);
+}
+
+.trans5 {
+
+}
+.trans5:hover {
+    transition
+}
+/* #Media Queries
+================================================== */
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .wrapper {
+        width: 100%;
+    }
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .wrapper {
+        width: 100%;
+    }
+    figure {
+        width:30%;
+        margin-left: 5%;
+    }
+    .content {
+        height:1100px;
+    }
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+       width:100%;
+       font-size: 3em;
+    }
+    .FireEmblembg {
+        display:none;
+    }
+    figure {
+        width:90%;
+        padding:4%;
+    }
+
+    .content {
+        height: 2200px;
+    }
+}
