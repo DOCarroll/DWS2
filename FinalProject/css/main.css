@@ -1,97 +1,52 @@
 * {
-    padding:0;
+    padding: 0;
     margin:0;
 }
 body {
-    background-color: #080808;
-
+    background-color: #000000;
 }
 
-.header {
-    color: #88AACD;
-    font-size: 4em;
-    line-height: 60px;
-    width:100%;
-    padding: 0;
-    font-family: 'Jolly Lodger', cursive;
-    margin-top:1%;
-}
-h1 {
-    font-size:1em;
-    margin-left:2%;
-}
-
-h2 {
-    color:#B09B93;
-    margin:0;
-    padding-left:2%;
-}
-
-p {
-    color: #88AACD;
-    padding:0 2% 0 2%;
-    margin-bottom:1%;
-}
-
-.wrapper {
+.headerbox {
     width:960px;
-    margin: 0 auto;
-    padding-top:0;
+    margin:0 auto;
 }
 
-.container {
-    max-width: 100%;
-}
-
-img {
-    width:100%;
-    margin-bottom:2%;
-}
-
-.center {
-    text-align: center;
-}
-
-.content {
-    border: solid 3px #B09B93;
-    padding:0;
-    margin:0;
-    border-radius: 20px;
-    background-color: #080808;
-}
-
-nav {
-    color: #080808;
-    background-color: #B09B93;
-    border-radius: 10px 10px 0 0;
-    font-weight: bolder;
-    font-size: 1.5em;
-    height:40px;
-    line-height: 40px;
-    margin-bottom:1%;
-}
-
-nav ul li {
-    list-style: none;
+li {
     display: inline;
-    padding:0;
-    margin:0;
+    font-size: 2em;
+    line-height: 6em;
+    float: left;
+    margin-right:2%;
+}
+a {
+    text-decoration: none;
+    color:#B09B93;
+}
+
+.baxter {
+    float:left;
+}
+
+.right {
     margin-left:2%;
 }
 
-.baxterlogo {
-    width:20%;
-    z-index: -1;
-    position:absolute;
-    left:.01%;
-    top:1%;
-    opacity: .5;
+ul ul {
+    display:none;
+    margin-top: -110px;
+
 }
-
-
-
-
-
+    ul li:hover > ul {
+        display:block;
+    }
+ul ul li {
+    color:#B09B93;
+    font-size:.5em;
+    height: 40px;
+    padding: 0 0 0 0;
+    clear:both;
+    z-index: 1;
+}
 /* #Media Queries
 ================================================== */
 
@@ -102,7 +57,7 @@ nav ul li {
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-    .wrapper {
+    .headerbox {
         width: 100%;
     }
 
@@ -110,21 +65,21 @@ nav ul li {
 
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
-    .wrapper {
+    .headerbox {
         width: 100%;
     }
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-    .wrapper {
+    .headerbox {
         width: 100%;
     }
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
-    .wrapper {
+    .headerbox {
         width: 100%;
     }
 
