@@ -11,16 +11,20 @@ body {
     margin:0 auto;
 }
 
+ul {
+    margin-left:16%;
+}
+
 li {
     display: inline;
     font-size: 2em;
     line-height: 6em;
-    float: left;
     margin-right:2%;
 }
 a {
     text-decoration: none;
     color:#B09B93;
+    transition: color linear 1s;
 }
 
 .baxter {
@@ -34,6 +38,7 @@ a {
 ul ul {
     display:none;
     margin-top: -110px;
+    height: 20px;
 
 }
     ul li:hover > ul {
@@ -47,6 +52,55 @@ ul ul li {
     clear:both;
     z-index: 1;
 }
+a:hover {
+    color:#88AACD;
+}
+
+.floatleft {
+    float:left;
+}
+iframe {
+    width:100%;
+    margin:0;
+}
+.imagelink {
+    width:20%;
+    margin-top:2%;
+    display:inline-block;
+}
+figure img {
+    width:100%;
+    border: solid 4px #88AACD;
+    border-radius: 10px;
+    height:200px;
+}
+
+figure figcaption {
+    text-align: center;
+    color: #B09B93;
+    font-size: 2em;
+}
+.marginleft {
+    margin-left:14%;
+}
+.imageleft {
+    margin-left:5.5%;
+}
+.contact {
+
+}
+
+.cta {
+    background-color: #88AACD;
+    width:15%;
+    color: #000000;
+    border:solid 2px #B09B93;
+    border-radius: 20px;
+    padding: 1%;
+    font-family: 'Jolly Lodger', cursive;
+    font-size: 2em;
+    margin: 2% auto;
+}
 /* #Media Queries
 ================================================== */
 
@@ -59,21 +113,37 @@ ul ul li {
 @media only screen and (min-width: 768px) and (max-width: 959px) {
     .headerbox {
         width: 100%;
+        margin-right:10%;
+    }
+    ul li:hover > ul {
+        display:none;
+    }
+    .cta {
+        width:50%;
+        text-align: center;
     }
 
 }
 
-/* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {
-    .headerbox {
-        width: 100%;
-    }
-}
+
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .headerbox {
         width: 100%;
+        margin-right:0;
+    }
+    li {
+        font-size: 1.5em;
+    }
+    ul {
+        margin-left:16%;
+    }
+    ul li:hover > ul {
+        display:none;
+    }
+    .cta {
+        width:50%;
     }
 }
 
@@ -83,4 +153,33 @@ ul ul li {
         width: 100%;
     }
 
+    .imagelink {
+        width:100%;
+    }
+    .marginleft {
+        margin: 0;
+    }
+   .imageleft {
+       margin:0;
+   }
+   li {
+       font-size: 1.5em;
+   }
+   .baxter {
+       z-index: -1;
+       position: absolute;
+       top:1%;
+       left:2%;
+       opacity:.3;
+   }
+   .contact {
+       float:left;
+   }
+    ul li:hover > ul {
+        display:none;
+    }
+    .cta {
+        width:50%;
+
+    }
 }
